@@ -28,7 +28,7 @@ ark "openhab-#{node[:openhab][:version]}" do
   action :put
 end
 
-PLUGIN_REGEX = /\A(action|binding|persistance|io)\.(.*)\z/
+PLUGIN_REGEX = /\A(action|binding|persistence|io)\.(.*)\z/
 
 if node['openhab']['plugins'].count > 0
 
